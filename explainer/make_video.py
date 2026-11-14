@@ -19,5 +19,7 @@ if "--no-voice" not in sys.argv and (os.getenv("OPENAI_API_KEY") or os.getenv("E
 else:
     shutil.copy(base, out); voiced = False; print("no TTS key: wrote music-only video")
 subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", "17.5", "-i", out, "-frames:v", "1", "-q:v", "3", f"out/{eid}.jpg"], check=True)
+for k, ts in (("p2", "14.5"), ("p3", "25.0")):
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", ts, "-i", out, "-frames:v", "1", "-q:v", "3", f"out/{eid}-{k}.jpg"], check=True)
 json.dump({"id": eid, "bundle": ep["bundle"], "caption": ep["post"], "tags": ep["tags"], "voiced": voiced}, open(f"out/{eid}.json", "w"), indent=1)
 print("done", out)

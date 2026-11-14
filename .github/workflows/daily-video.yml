@@ -41,7 +41,7 @@ jobs:
           D=$(date -u +%Y-%m-%d)
           TAG="videos-$D-$GITHUB_RUN_NUMBER"
           FILES=""
-          while read id; do FILES="$FILES explainer/out/$id.mp4 explainer/out/$id.jpg"; done < ids.txt
+          while read id; do FILES="$FILES explainer/out/$id.mp4 explainer/out/$id.jpg explainer/out/$id-p2.jpg explainer/out/$id-p3.jpg"; done < ids.txt
           gh release create "$TAG" $FILES --title "Videos $D" --notes "Auto-generated cartoon videos for $D" --repo "$GITHUB_REPOSITORY"
           mkdir -p queue
           python3 - "$TAG" "$GITHUB_REPOSITORY" <<'PY'
@@ -51,7 +51,7 @@ jobs:
           for id in open("ids.txt").read().split():
               m = json.load(open(f"explainer/out/{id}.json"))
               base = f"https://github.com/{repo}/releases/download/{tag}"
-              m.update(video_url=f"{base}/{id}.mp4", poster_url=f"{base}/{id}.jpg")
+              m.update(video_url=f"{base}/{id}.mp4", poster_url=f"{base}/{id}.jpg", pin_urls=[f"{base}/{id}.jpg", f"{base}/{id}-p2.jpg", f"{base}/{id}-p3.jpg"])
               items.append(m)
           json.dump({"date": datetime.date.today().isoformat(), "tag": tag, "items": items}, open(f"queue/{tag}.json", "w"), indent=1)
           PY

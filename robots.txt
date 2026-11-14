@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://promptkit-tan.vercel.app/sitemap.xml
