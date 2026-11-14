@@ -1,0 +1,458 @@
+[
+ {
+  "id": "ecom-01",
+  "bundle": "E-Commerce",
+  "ask": "Write an ad for my store",
+  "badLines": [
+   "Buy our products!",
+   "High quality. Best prices.",
+   "Great value for you.",
+   "Shop now."
+  ],
+  "stat1": {
+   "big": "0 clicks",
+   "small": "this week"
+  },
+  "stat2": {
+   "big": "12 carts",
+   "small": "left behind"
+  },
+  "promptTitle": "E-Commerce Ad Prompt",
+  "rows": [
+   {
+    "lead": "Write a Facebook ad for",
+    "label": "[PRODUCT]",
+    "value": "cloud-soft sheets"
+   },
+   {
+    "lead": "Speak to",
+    "label": "[AUDIENCE]",
+    "value": "tired sleepers"
+   },
+   {
+    "lead": "Tone:",
+    "label": "[TONE]",
+    "value": "warm and honest"
+   }
+  ],
+  "adLines": [
+   "Sleep like it is day one.",
+   "Cloud-soft sheets you will",
+   "not want to leave. Free 30-day",
+   "returns."
+  ],
+  "tagline": "Prompts that sell.",
+  "insideTitle": "Inside the E-Commerce bundle",
+  "items": [
+   {
+    "title": "Ad prompts",
+    "sub": "Facebook, Instagram and TikTok"
+   },
+   {
+    "title": "Product descriptions",
+    "sub": "Pages that explain and sell"
+   },
+   {
+    "title": "Cart recovery emails",
+    "sub": "Bring buyers back to checkout"
+   }
+  ],
+  "price": "$7",
+  "vo": [
+   "You run an online store. You ask AI for an ad.",
+   "You get boring copy. No clicks. Carts left behind.",
+   "Meet PromptKit.",
+   "Copy a ready-made prompt. Fill in the brackets. Paste it into any AI.",
+   "Get ads, product pages, and cart emails you can use today.",
+   "Ad prompts. Product descriptions. Cart recovery emails.",
+   "Seven dollars. One time. Link in bio."
+  ],
+  "post": "Your AI ads sound generic because the prompt is generic. PromptKit gives you ready-made prompts for ads, product pages and cart emails. $7, one-time. Link in bio. Illustration. Results vary.",
+  "tags": [
+   "ecommerce",
+   "shopify",
+   "aiprompts",
+   "smallbusiness"
+  ]
+ },
+ {
+  "id": "ecom-02",
+  "bundle": "E-Commerce",
+  "ask": "Write a product description",
+  "badLines": [
+   "This product is great.",
+   "Made with quality.",
+   "You will love it.",
+   "Order today."
+  ],
+  "stat1": {
+   "big": "1.2% cvr",
+   "small": "product page"
+  },
+  "stat2": {
+   "big": "60% leave",
+   "small": "before checkout"
+  },
+  "promptTitle": "Product Description Prompt",
+  "rows": [
+   {
+    "lead": "Describe",
+    "label": "[PRODUCT]",
+    "value": "a leather weekender bag"
+   },
+   {
+    "lead": "For",
+    "label": "[BUYER]",
+    "value": "frequent travelers"
+   },
+   {
+    "lead": "Focus on",
+    "label": "[BENEFIT]",
+    "value": "fits under any seat"
+   }
+  ],
+  "adLines": [
+   "Pack once. Go anywhere.",
+   "Full-grain leather that fits",
+   "under any airline seat.",
+   "Built to last for years."
+  ],
+  "tagline": "Prompts that sell.",
+  "insideTitle": "Inside the E-Commerce bundle",
+  "items": [
+   {
+    "title": "Ad prompts",
+    "sub": "Facebook, Instagram and TikTok"
+   },
+   {
+    "title": "Product descriptions",
+    "sub": "Pages that explain and sell"
+   },
+   {
+    "title": "Cart recovery emails",
+    "sub": "Bring buyers back to checkout"
+   }
+  ],
+  "price": "$7",
+  "vo": [
+   "Your product page says: great quality, you will love it.",
+   "Shoppers read that and leave. No sale.",
+   "Meet PromptKit.",
+   "Pick a product description prompt. Fill in the brackets. Paste it into any AI.",
+   "Get copy that sells the benefit, not the adjectives.",
+   "Ad prompts. Product descriptions. Cart recovery emails.",
+   "Seven dollars. One time. Link in bio."
+  ],
+  "post": "Generic product descriptions lose sales. A better prompt writes copy that sells the benefit. PromptKit E-Commerce bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+  "tags": [
+   "ecommerce",
+   "productdescription",
+   "aiprompts",
+   "shopify"
+  ]
+ },
+ {
+  "id": "re-01",
+  "bundle": "Real Estate",
+  "ask": "Write my listing",
+  "badLines": [
+   "Spacious home.",
+   "Great location.",
+   "Must see.",
+   "Call today."
+  ],
+  "stat1": {
+   "big": "0 calls",
+   "small": "this week"
+  },
+  "stat2": {
+   "big": "3 showings",
+   "small": "all cancelled"
+  },
+  "promptTitle": "Listing Description Prompt",
+  "rows": [
+   {
+    "lead": "Write a listing for",
+    "label": "[PROPERTY]",
+    "value": "a 3-bed bungalow"
+   },
+   {
+    "lead": "Buyer:",
+    "label": "[BUYER]",
+    "value": "first-time families"
+   },
+   {
+    "lead": "Tone:",
+    "label": "[TONE]",
+    "value": "warm and clear"
+   }
+  ],
+  "adLines": [
+   "Your first home, ready for Sunday dinners.",
+   "Sunny 3-bed bungalow with a",
+   "fenced yard, a short walk",
+   "from the park and school."
+  ],
+  "tagline": "Prompts that list.",
+  "insideTitle": "Inside the Real Estate bundle",
+  "items": [
+   {
+    "title": "Listing descriptions",
+    "sub": "Homes that stand out"
+   },
+   {
+    "title": "Social posts",
+    "sub": "Open houses and new listings"
+   },
+   {
+    "title": "Follow-up emails",
+    "sub": "Warm up every lead"
+   }
+  ],
+  "price": "$7",
+  "vo": [
+   "You are a real estate agent. You ask AI to write a listing.",
+   "You get: spacious home, great location. Nobody calls.",
+   "Meet PromptKit.",
+   "Copy a ready-made prompt. Fill in the brackets. Paste it into any AI.",
+   "Get listings, social posts, and follow-up emails you can use today.",
+   "Listing descriptions. Social posts. Follow-up emails.",
+   "Seven dollars. One time. Link in bio."
+  ],
+  "post": "Generic listings get skipped. A structured prompt writes listings buyers remember. PromptKit Real Estate bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+  "tags": [
+   "realestate",
+   "realtor",
+   "listing",
+   "aiprompts"
+  ]
+ },
+ {
+  "id": "ugc-01",
+  "bundle": "UGC",
+  "ask": "Write a brand pitch",
+  "badLines": [
+   "I love your brand!",
+   "Let us work together.",
+   "I am a creator.",
+   "Please reply."
+  ],
+  "stat1": {
+   "big": "0 replies",
+   "small": "20 pitches sent"
+  },
+  "stat2": {
+   "big": "0 deals",
+   "small": "this month"
+  },
+  "promptTitle": "Brand Pitch Prompt",
+  "rows": [
+   {
+    "lead": "Pitch",
+    "label": "[BRAND]",
+    "value": "a skincare brand"
+   },
+   {
+    "lead": "Show",
+    "label": "[PROOF]",
+    "value": "my 12k views reel"
+   },
+   {
+    "lead": "Offer:",
+    "label": "[OFFER]",
+    "value": "3 videos in 7 days"
+   }
+  ],
+  "adLines": [
+   "I made 3 reels for a brand like yours.",
+   "One reached 12k views.",
+   "I can deliver 3 videos",
+   "in 7 days. Want a sample?"
+  ],
+  "tagline": "Prompts that pitch.",
+  "insideTitle": "Inside the UGC bundle",
+  "items": [
+   {
+    "title": "Brand pitch emails",
+    "sub": "Land more partnerships"
+   },
+   {
+    "title": "Video scripts",
+    "sub": "Hooks that hold attention"
+   },
+   {
+    "title": "Rate cards",
+    "sub": "Price your work with confidence"
+   }
+  ],
+  "price": "$7",
+  "vo": [
+   "You are a UGC creator. You ask AI to write a brand pitch.",
+   "You get: I love your brand, let us work together. No reply.",
+   "Meet PromptKit.",
+   "Copy a ready-made prompt. Fill in the brackets. Paste it into any AI.",
+   "Get pitches, video scripts, and rate cards you can use today.",
+   "Brand pitch emails. Video scripts. Rate cards.",
+   "Seven dollars. One time. Link in bio."
+  ],
+  "post": "Generic brand pitches get ignored. A structured prompt writes pitches that get replies. PromptKit UGC bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+  "tags": [
+   "ugccreator",
+   "ugc",
+   "brandpitch",
+   "aiprompts"
+  ]
+ },
+ {
+  "id": "ugc-02",
+  "bundle": "UGC",
+  "ask": "Write a video script",
+  "badLines": [
+   "Hey guys!",
+   "Today I show a product.",
+   "It is really good.",
+   "Like and follow."
+  ],
+  "stat1": {
+   "big": "3 sec",
+   "small": "average watch time"
+  },
+  "stat2": {
+   "big": "0 sales",
+   "small": "from the video"
+  },
+  "promptTitle": "Video Script Prompt",
+  "rows": [
+   {
+    "lead": "Script a hook for",
+    "label": "[PRODUCT]",
+    "value": "a travel mug"
+   },
+   {
+    "lead": "Problem:",
+    "label": "[PAIN]",
+    "value": "cold coffee at 10am"
+   },
+   {
+    "lead": "Length:",
+    "label": "[LENGTH]",
+    "value": "20 seconds"
+   }
+  ],
+  "adLines": [
+   "Is your coffee cold by 10am?",
+   "This mug stays hot 12 hours.",
+   "Watch what happens",
+   "when I pour it out."
+  ],
+  "tagline": "Prompts that pitch.",
+  "insideTitle": "Inside the UGC bundle",
+  "items": [
+   {
+    "title": "Brand pitch emails",
+    "sub": "Land more partnerships"
+   },
+   {
+    "title": "Video scripts",
+    "sub": "Hooks that hold attention"
+   },
+   {
+    "title": "Rate cards",
+    "sub": "Price your work with confidence"
+   }
+  ],
+  "price": "$7",
+  "vo": [
+   "You are a UGC creator. You ask AI to write a brand pitch.",
+   "You get: I love your brand, let us work together. No reply.",
+   "Meet PromptKit.",
+   "Copy a ready-made prompt. Fill in the brackets. Paste it into any AI.",
+   "Get pitches, video scripts, and rate cards you can use today.",
+   "Brand pitch emails. Video scripts. Rate cards.",
+   "Seven dollars. One time. Link in bio."
+  ],
+  "post": "Weak hooks lose viewers in 3 seconds. A structured prompt writes hooks that hold attention. PromptKit UGC bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+  "tags": [
+   "ugccreator",
+   "videoscript",
+   "hooks",
+   "aiprompts"
+  ]
+ },
+ {
+  "id": "re-02",
+  "bundle": "Real Estate",
+  "ask": "Write an open house post",
+  "badLines": [
+   "Open house Sunday!",
+   "Come see this home.",
+   "Great price.",
+   "DM for info."
+  ],
+  "stat1": {
+   "big": "2 likes",
+   "small": "on the post"
+  },
+  "stat2": {
+   "big": "0 visitors",
+   "small": "at the open house"
+  },
+  "promptTitle": "Open House Post Prompt",
+  "rows": [
+   {
+    "lead": "Promote",
+    "label": "[PROPERTY]",
+    "value": "a 2-bed condo"
+   },
+   {
+    "lead": "When:",
+    "label": "[TIME]",
+    "value": "Sunday 1 to 3 pm"
+   },
+   {
+    "lead": "Hook:",
+    "label": "[HOOK]",
+    "value": "walk to the beach"
+   }
+  ],
+  "adLines": [
+   "Walk to the beach from your door.",
+   "Open house Sunday, 1 to 3 pm.",
+   "Sunny 2-bed condo with a",
+   "balcony. Come say hi."
+  ],
+  "tagline": "Prompts that list.",
+  "insideTitle": "Inside the Real Estate bundle",
+  "items": [
+   {
+    "title": "Listing descriptions",
+    "sub": "Homes that stand out"
+   },
+   {
+    "title": "Social posts",
+    "sub": "Open houses and new listings"
+   },
+   {
+    "title": "Follow-up emails",
+    "sub": "Warm up every lead"
+   }
+  ],
+  "price": "$7",
+  "vo": [
+   "You are a real estate agent. You ask AI to write a listing.",
+   "You get: spacious home, great location. Nobody calls.",
+   "Meet PromptKit.",
+   "Copy a ready-made prompt. Fill in the brackets. Paste it into any AI.",
+   "Get listings, social posts, and follow-up emails you can use today.",
+   "Listing descriptions. Social posts. Follow-up emails.",
+   "Seven dollars. One time. Link in bio."
+  ],
+  "post": "Boring open house posts get scrolled past. A structured prompt writes posts people show up for. PromptKit Real Estate bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+  "tags": [
+   "realestate",
+   "openhouse",
+   "realtor",
+   "aiprompts"
+  ]
+ }
+]
