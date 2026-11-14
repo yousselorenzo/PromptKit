@@ -1,0 +1,20 @@
+{
+ "date": "2026-11-14",
+ "tag": "videos-2026-11-14-2",
+ "items": [
+  {
+   "id": "ecom-01",
+   "bundle": "E-Commerce",
+   "caption": "Your AI ads sound generic because the prompt is generic. PromptKit gives you ready-made prompts for ads, product pages and cart emails. $7, one-time. Link in bio. Illustration. Results vary.",
+   "tags": [
+    "ecommerce",
+    "shopify",
+    "aiprompts",
+    "smallbusiness"
+   ],
+   "voiced": false,
+   "video_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-14-2/ecom-01.mp4",
+   "poster_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-14-2/ecom-01.jpg"
+  }
+ ]
+}
