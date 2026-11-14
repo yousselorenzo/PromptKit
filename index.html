@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PromptKit — Instant AI Prompt Bundles for Creators & Founders</title>
+<meta name="description" content="Battle-tested ChatGPT and Claude prompt bundles for e-commerce ads, real estate lead generation, and UGC brand pitches. $7 each, instant access through Stripe. Copy, paste, profit.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://usformkit.com/">
+<meta name="theme-color" content="#030712">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PromptKit">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="PromptKit — Instant AI Prompt Bundles for Creators & Founders">
+<meta property="og:description" content="Copy-paste AI prompt bundles for e-commerce, real estate, and UGC creators. $7 each, instant access.">
+<meta property="og:url" content="https://usformkit.com/">
+<meta property="og:image" content="https://usformkit.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PromptKit — Battle-Tested AI Prompts">
+<meta name="twitter:description" content="Copy. Paste. Profit. AI prompt bundles from $7.">
+<meta name="twitter:image" content="https://usformkit.com/og-image.png">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23030712'/%3E%3Cpath d='M10 24V8h7.5a4.8 4.8 0 010 9.6H13' stroke='%2310b981' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": "https://usformkit.com/#org", "name": "PromptKit", "url": "https://usformkit.com/", "email": "support@usformkit.com" },
+    { "@type": "WebSite", "name": "PromptKit", "url": "https://usformkit.com/", "publisher": { "@id": "https://usformkit.com/#org" } },
+    {
+      "@type": "Product",
+      "name": "The E-Commerce Scale Bundle",
+      "description": "AI prompts for Facebook and TikTok ad copy, high-converting Shopify product descriptions, and abandoned cart email sequences.",
+      "brand": { "@type": "Brand", "name": "PromptKit" },
+      "category": "Digital Download > AI Prompts",
+      "offers": { "@type": "Offer", "url": "https://usformkit.com/#ecommerce", "price": "7.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-12-31" }
+    },
+    {
+      "@type": "Product",
+      "name": "The Real Estate Lead Gen Bundle",
+      "description": "AI prompts for MLS listing descriptions, cold outreach to home buyers and sellers, and localized social media scripts.",
+      "brand": { "@type": "Brand", "name": "PromptKit" },
+      "category": "Digital Download > AI Prompts",
+      "offers": { "@type": "Offer", "url": "https://usformkit.com/#realestate", "price": "7.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-12-31" }
+    },
+    {
+      "@type": "Product",
+      "name": "The UGC Creator & Brand Pitch Bundle",
+      "description": "DM scripts, cold pitch emails to brand managers, and rate-card response templates for UGC creators.",
+      "brand": { "@type": "Brand", "name": "PromptKit" },
+      "category": "Digital Download > AI Prompts",
+      "offers": { "@type": "Offer", "url": "https://usformkit.com/#ugc", "price": "7.00", "priceCurrency": "USD", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-12-31" }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { sans: ['Inter','ui-sans-serif','system-ui','-apple-system','Segoe UI','sans-serif'], mono: ['JetBrains Mono','ui-monospace','SFMono-Regular','Menlo','monospace'] },
+  colors: { obsidian: '#030712' }
+}}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.14.1/dist/cdn.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+<style>
+  [x-cloak]{display:none!important}
+  html{background:#030712}
+  body{background:#030712;font-feature-settings:"cv11","ss01";-webkit-font-smoothing:antialiased}
+  ::selection{background:rgba(16,185,129,.35);color:#fff}
+
+  .atmos{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+  .atmos::before{content:"";position:absolute;inset:0;
+    background-image:radial-gradient(rgba(255,255,255,.035) 1px,transparent 1px);background-size:24px 24px;
+    -webkit-mask-image:linear-gradient(to bottom,#000 30%,transparent 95%);mask-image:linear-gradient(to bottom,#000 30%,transparent 95%)}
+  .orb{position:absolute;border-radius:9999px;filter:blur(110px)}
+
+  .spot{position:relative;isolation:isolate;transition:border-color .25s,box-shadow .25s,transform .25s}
+  .spot::before{content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;opacity:0;transition:opacity .3s;
+    background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),rgba(16,185,129,.13),transparent 60%)}
+  .spot:hover::before{opacity:1}
+  .spot:hover{border-color:rgba(16,185,129,.4);box-shadow:0 0 25px -5px rgba(16,185,129,.3)}
+
+  .btn-neon{background:#10b981;color:#022c22;font-weight:700;box-shadow:0 0 0 1px rgba(52,211,153,.6),0 8px 28px -6px rgba(16,185,129,.6);transition:background .2s,box-shadow .2s,transform .15s}
+  .btn-neon:hover{background:#34d399;box-shadow:0 0 0 1px rgba(110,231,183,.9),0 10px 40px -4px rgba(16,185,129,.85)}
+  .btn-neon:active{transform:translateY(1px) scale(.99)}
+
+  .key{color:#34d399}
+  .tok{color:#fbbf24;background:rgba(251,191,36,.08);border-radius:4px;padding:0 3px;transition:color .2s,background .2s}
+  .tok.on{color:#6ee7b7;background:rgba(16,185,129,.16)}
+  .prompt-scroll{scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.15) transparent}
+
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .rise{opacity:0;animation:rise .8s cubic-bezier(.2,.7,.2,1) forwards}
+  .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.28s}.d4{animation-delay:.4s}.d5{animation-delay:.55s}
+
+  @keyframes ping2{0%{transform:scale(1);opacity:.7}80%,100%{transform:scale(2.6);opacity:0}}
+  .ping::after{content:"";position:absolute;inset:0;border-radius:9999px;background:#10b981;animation:ping2 1.8s ease-out infinite}
+
+  :focus-visible{outline:2px solid #34d399;outline-offset:3px;border-radius:6px}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .rise{animation:none;opacity:1}.ping::after{animation:none;display:none}
+    *{transition-duration:.01ms!important}
+  }
+  section[id]{scroll-margin-top:84px}
+</style>
+</head>
+
+<body class="bg-obsidian text-zinc-300 font-sans antialiased" x-data="{ modal: null }">
+
+<header class="fixed top-0 inset-x-0 z-50" x-data="{ menu: false }">
+  <div class="mx-auto max-w-6xl px-4 pt-3">
+    <nav aria-label="Main" class="rounded-2xl border border-white/10 bg-zinc-950/60 backdrop-blur-xl shadow-[0_8px_30px_-12px_rgba(0,0,0,.8)]">
+      <div class="flex h-14 items-center justify-between px-4">
+        <a href="#top" class="flex items-center gap-2.5 text-white font-semibold tracking-tight" aria-label="PromptKit home">
+          <span class="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-b from-zinc-800 to-zinc-950 ring-1 ring-white/10">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 20V5h6.5a4.5 4.5 0 010 9H10" stroke="#10b981" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="18.5" cy="5.5" r="1.8" fill="#34d399"/></svg>
+          </span>
+          PromptKit
+        </a>
+        <div class="hidden md:flex items-center gap-1 text-sm text-zinc-400">
+          <a href="#preview" class="rounded-lg px-3 py-2 hover:text-white hover:bg-white/5 transition">Live preview</a>
+          <a href="#bundles" class="rounded-lg px-3 py-2 hover:text-white hover:bg-white/5 transition">Bundles</a>
+          <a href="#how" class="rounded-lg px-3 py-2 hover:text-white hover:bg-white/5 transition">How it works</a>
+          <a href="#faq" class="rounded-lg px-3 py-2 hover:text-white hover:bg-white/5 transition">FAQ</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <a href="#bundles" class="btn-neon hidden sm:inline-flex rounded-lg px-4 py-2 text-sm">Get the prompts</a>
+          <button type="button" class="md:hidden grid h-9 w-9 place-items-center rounded-lg border border-white/10 text-zinc-300" @click="menu=!menu" :aria-expanded="menu" aria-label="Toggle menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path x-show="!menu" d="M4 7h16M4 12h16M4 17h16"/><path x-show="menu" x-cloak d="M6 6l12 12M18 6L6 18"/></svg>
+          </button>
+        </div>
+      </div>
+      <div x-show="menu" x-collapse x-cloak class="md:hidden border-t border-white/10">
+        <div class="flex flex-col p-3 text-sm" @click="menu=false">
+          <a href="#preview" class="rounded-lg px-3 py-3 hover:bg-white/5">Live preview</a>
+          <a href="#bundles" class="rounded-lg px-3 py-3 hover:bg-white/5">Bundles</a>
+          <a href="#how" class="rounded-lg px-3 py-3 hover:bg-white/5">How it works</a>
+          <a href="#faq" class="rounded-lg px-3 py-3 hover:bg-white/5">FAQ</a>
+          <a href="#bundles" class="btn-neon mt-2 rounded-lg px-4 py-3 text-center">Get the prompts</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="relative overflow-hidden">
+  <div class="atmos" aria-hidden="true">
+    <div class="orb" style="top:-160px;left:50%;margin-left:-380px;width:760px;height:420px;background:rgba(16,185,129,.20)"></div>
+    <div class="orb" style="top:120px;right:-140px;width:380px;height:380px;background:rgba(56,189,248,.07)"></div>
+  </div>
+  <div class="relative z-10 mx-auto max-w-4xl px-5 pt-40 pb-24 sm:pt-48 text-center">
+    <p class="rise d1 mx-auto inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-white/[0.03] py-1.5 pl-3 pr-4 text-sm text-zinc-300">
+      <span class="relative flex h-2 w-2"><span class="ping relative inline-block h-2 w-2 rounded-full bg-emerald-500"></span></span>
+      Instant access after checkout
+    </p>
+    <h1 class="rise d2 mt-7 text-[2.6rem] leading-[1.04] sm:text-6xl lg:text-7xl font-extrabold tracking-[-0.035em] text-white">
+      Stop rewriting the same prompt. Paste one that already works.
+    </h1>
+    <p class="rise d3 mx-auto mt-7 max-w-2xl text-lg sm:text-xl leading-relaxed text-zinc-400">
+      Battle-Tested AI Prompts for Modern Professionals. Copy. Paste. Profit. Ad copy, property listings, and brand pitches drafted in minutes, not hours.
+    </p>
+    <div class="rise d4 mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+      <a href="#preview" class="btn-neon inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-base">
+        Try a prompt live
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </a>
+      <a href="#bundles" class="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] px-7 py-3.5 text-base font-semibold text-white transition hover:bg-white/[0.07] hover:border-white/20">See the 3 bundles · $7 each</a>
+    </div>
+
+    <dl class="rise d5 mx-auto mt-16 grid max-w-2xl grid-cols-3 divide-x divide-white/10 rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur">
+      <div class="px-3 py-5">
+        <dt class="text-xs text-zinc-500">Used by</dt>
+        <dd class="mt-1 text-lg sm:text-2xl font-bold text-white">1,200+ creators</dd>
+      </div>
+      <div class="px-3 py-5">
+        <dt class="text-xs text-zinc-500">Price per bundle</dt>
+        <dd class="mt-1 text-lg sm:text-2xl font-bold text-white">$7 once</dd>
+      </div>
+      <div class="px-3 py-5">
+        <dt class="text-xs text-zinc-500">Works in</dt>
+        <dd class="mt-1 text-lg sm:text-2xl font-bold text-white">ChatGPT, Claude, Gemini</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section id="preview" class="relative px-5 py-24" x-data="playground()">
+  <div class="mx-auto max-w-6xl">
+    <div class="max-w-2xl">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Fill in your details and watch the prompt build itself.</h2>
+      <p class="mt-4 text-lg text-zinc-400">Every PromptKit prompt works this way: swap the highlighted brackets for your product, market, or niche, then paste. Try one full sample from each bundle.</p>
+    </div>
+
+    <div class="mt-10" role="tablist" aria-label="Bundle previews">
+      <div class="inline-flex max-w-full gap-1 overflow-x-auto rounded-xl border border-white/10 bg-white/[0.03] p-1">
+        <template x-for="b in bundles" :key="b.id">
+          <button type="button" role="tab" :aria-selected="active===b.id" @click="active=b.id"
+                  :class="active===b.id ? 'bg-white/10 text-white shadow-inner' : 'text-zinc-400 hover:text-white'"
+                  class="whitespace-nowrap rounded-lg px-4 py-2 text-sm font-medium transition" x-text="b.tab"></button>
+        </template>
+      </div>
+    </div>
+
+    <template x-for="b in bundles" :key="b.id">
+      <div x-show="active===b.id" x-cloak role="tabpanel" class="mt-6 grid gap-5 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+        <div class="rounded-2xl border border-white/10 bg-zinc-900/60 p-6 backdrop-blur">
+          <h3 class="font-semibold text-white" x-text="b.sampleTitle"></h3>
+          <p class="mt-1 text-sm text-zinc-400" x-text="b.sampleHint"></p>
+          <div class="mt-6 space-y-4">
+            <template x-for="f in b.fields" :key="f.k">
+              <div>
+                <label :for="b.id+'-'+f.k" class="mb-1.5 block text-sm font-medium text-zinc-300" x-text="f.label"></label>
+                <input :id="b.id+'-'+f.k" type="text" x-model="vals[b.id][f.k]" :placeholder="f.ph" autocomplete="off"
+                       class="w-full rounded-lg border border-white/10 bg-black/40 px-3.5 py-2.5 text-sm text-white placeholder:text-zinc-600 outline-none transition focus:border-emerald-500/60 focus:ring-2 focus:ring-emerald-500/20">
+              </div>
+            </template>
+          </div>
+          <div class="mt-6 flex items-center justify-between gap-3 border-t border-white/10 pt-5">
+            <button type="button" class="text-sm text-zinc-400 underline-offset-4 hover:text-white hover:underline" @click="fillExample(b)">Fill with an example</button>
+            <button type="button" class="text-sm text-zinc-500 underline-offset-4 hover:text-white hover:underline" @click="clearAll(b)">Clear</button>
+          </div>
+        </div>
+
+        <div class="flex min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-[#050b14] shadow-[0_0_60px_-20px_rgba(16,185,129,.35)]">
+          <div class="flex items-center justify-between gap-3 border-b border-white/10 bg-white/[0.02] px-4 py-3">
+            <div class="flex items-center gap-3 min-w-0">
+              <div class="flex gap-1.5" aria-hidden="true"><i class="h-2.5 w-2.5 rounded-full bg-zinc-700"></i><i class="h-2.5 w-2.5 rounded-full bg-zinc-700"></i><i class="h-2.5 w-2.5 rounded-full bg-zinc-700"></i></div>
+              <span class="truncate font-mono text-xs text-zinc-500" x-text="b.file"></span>
+            </div>
+            <button type="button" @click="copy(b)" :aria-label="'Copy prompt: '+b.name"
+                    :class="copied===b.id ? 'border-emerald-400/60 bg-emerald-500/15 text-emerald-300' : 'border-white/10 bg-white/5 text-zinc-200 hover:bg-white/10'"
+                    class="inline-flex shrink-0 items-center gap-2 rounded-lg border px-3 py-1.5 text-xs font-semibold transition">
+              <svg x-show="copied!==b.id" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 012-2h10"/></svg>
+              <span x-text="copied===b.id ? 'Copied ✓' : 'Copy prompt'"></span>
+            </button>
+          </div>
+          <pre class="prompt-scroll m-0 max-h-[30rem] overflow-auto whitespace-pre-wrap break-words p-5 font-mono text-[12.5px] leading-[1.75] text-zinc-300" x-html="html(b)" aria-live="polite"></pre>
+        </div>
+      </div>
+    </template>
+  </div>
+</section>
+
+<section id="bundles" class="relative px-5 py-24">
+  <div class="atmos" aria-hidden="true"><div class="orb" style="top:30%;left:50%;margin-left:-300px;width:600px;height:360px;background:rgba(16,185,129,.07)"></div></div>
+  <div class="relative z-10 mx-auto max-w-6xl" x-data="{ b: PK.bundles }">
+    <div class="mx-auto max-w-2xl text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Three bundles. $7 each. No subscription.</h2>
+      <p class="mt-4 text-lg text-zinc-400">Pick the one that matches the work you do. Pay once through Stripe and get the full library right away.</p>
+    </div>
+
+    <div class="mt-14 grid gap-6 lg:grid-cols-3">
+      <template x-for="p in b" :key="p.id">
+        <article :id="p.id" class="spot flex flex-col rounded-2xl border border-white/10 bg-zinc-900/60 p-7 backdrop-blur"
+                 :class="p.popular && 'lg:-mt-3 lg:mb-3 border-emerald-500/30'">
+          <div class="flex items-start justify-between gap-3">
+            <span class="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/[0.04] text-emerald-400" x-html="p.icon" aria-hidden="true"></span>
+            <span class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold"
+                  :class="p.popular ? 'border-emerald-400/40 bg-emerald-500/15 text-emerald-300' : 'border-white/10 bg-white/5 text-zinc-300'">
+              <span class="h-1.5 w-1.5 rounded-full" :class="p.popular ? 'bg-emerald-400' : 'bg-zinc-500'"></span>
+              <span x-text="p.badge"></span>
+            </span>
+          </div>
+          <h3 class="mt-6 text-xl font-semibold leading-snug text-white" x-text="p.name"></h3>
+          <p class="mt-2 text-sm leading-relaxed text-zinc-400" x-text="p.blurb"></p>
+
+          <div class="mt-6 flex items-baseline gap-2">
+            <span class="text-5xl font-extrabold tracking-tight text-white">$7</span>
+            <span class="text-sm text-zinc-500">one-time, USD</span>
+          </div>
+
+          <ul class="mt-6 space-y-3 text-sm text-zinc-300">
+            <template x-for="i in p.items" :key="i">
+              <li class="flex gap-3">
+                <svg class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>
+                <span x-text="i"></span>
+              </li>
+            </template>
+          </ul>
+
+          <div class="mt-auto pt-8">
+            <a :href="p.stripe" rel="noopener" class="btn-neon block rounded-xl px-5 py-3.5 text-center text-base" x-text="'Buy ' + p.short + ' for $7'"></a>
+            <p class="mt-3 flex items-center justify-center gap-1.5 text-xs text-zinc-500">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>
+              Secure checkout by Stripe. Instant delivery.
+            </p>
+          </div>
+        </article>
+      </template>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="px-5 py-24">
+  <div class="mx-auto max-w-5xl">
+    <h2 class="max-w-xl text-3xl sm:text-4xl font-bold tracking-tight text-white">From checkout to first draft in about three minutes.</h2>
+    <ol class="mt-12 grid gap-5 md:grid-cols-3">
+      <li class="spot rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+        <span class="font-mono text-sm text-emerald-400">1</span>
+        <h3 class="mt-3 font-semibold text-white">Buy and download</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Pay $7 with a card, Apple Pay, or Google Pay. Your prompt library is delivered the moment payment clears.</p>
+      </li>
+      <li class="spot rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+        <span class="font-mono text-sm text-emerald-400">2</span>
+        <h3 class="mt-3 font-semibold text-white">Fill in the brackets</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Add your product, market, or niche. Each prompt tells you exactly what goes where.</p>
+      </li>
+      <li class="spot rounded-2xl border border-white/10 bg-white/[0.02] p-6">
+        <span class="font-mono text-sm text-emerald-400">3</span>
+        <h3 class="mt-3 font-semibold text-white">Paste into your AI</h3>
+        <p class="mt-2 text-sm leading-relaxed text-zinc-400">Use ChatGPT, Claude, or Gemini. Edit the draft, then publish or send it.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section id="faq" class="px-5 py-24" x-data="{ o: 0, faqs: PK.faqs }">
+  <div class="mx-auto max-w-3xl">
+    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Questions, answered.</h2>
+    <div class="mt-10 divide-y divide-white/10 rounded-2xl border border-white/10 bg-white/[0.02]">
+      <template x-for="(f,i) in faqs" :key="i">
+        <div>
+          <h3>
+            <button type="button" class="flex w-full items-center justify-between gap-6 px-6 py-5 text-left font-medium text-white transition hover:bg-white/[0.03]"
+                    @click="o = (o===i ? -1 : i)" :aria-expanded="o===i" :aria-controls="'faq-'+i">
+              <span x-text="f.q"></span>
+              <svg class="h-4 w-4 shrink-0 text-zinc-500 transition-transform duration-300" :class="o===i && 'rotate-180 text-emerald-400'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div :id="'faq-'+i" x-show="o===i" x-collapse x-cloak>
+            <p class="px-6 pb-6 leading-relaxed text-zinc-400" x-text="f.a"></p>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+</section>
+
+<section class="relative overflow-hidden px-5 py-28">
+  <div class="atmos" aria-hidden="true"><div class="orb" style="top:50%;left:50%;margin:-170px 0 0 -350px;width:700px;height:340px;background:rgba(16,185,129,.16)"></div></div>
+  <div class="relative z-10 mx-auto max-w-2xl text-center">
+    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-[-0.03em] text-white">Your next ad, listing, or pitch is one paste away.</h2>
+    <p class="mt-5 text-lg text-zinc-400">Seven dollars. One time. Instant access.</p>
+    <a href="#bundles" class="btn-neon mt-9 inline-flex rounded-xl px-8 py-4 text-base">Choose your bundle</a>
+  </div>
+</section>
+</main>
+
+<!-- LEGAL MODALS REQUIRED BY STRIPE (NO 404 ERRORS) -->
+<div x-show="modal !== null" x-cloak class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm" @keydown.escape.window="modal = null">
+  <div class="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-2xl border border-white/10 bg-zinc-950 p-6 sm:p-8 text-zinc-300 shadow-2xl" @click.outside="modal = null">
+    <button type="button" @click="modal = null" class="absolute top-4 right-4 grid h-8 w-8 place-items-center rounded-lg bg-white/5 text-zinc-400 hover:text-white hover:bg-white/10 transition">✕</button>
+    
+    <!-- PRIVACY POLICY -->
+    <template x-if="modal === 'privacy'">
+      <div class="space-y-4 text-sm">
+        <h3 class="text-xl font-bold text-white">Privacy Policy</h3>
+        <p class="text-xs text-zinc-500">Last updated: November 14, 2026</p>
+        <p>PromptKit ("we", "our", or "us") operates the website usformkit.com. This Privacy Policy explains how we collect, use, and protect your personal information when you visit our website or purchase our digital prompt bundles.</p>
+        <h4 class="font-semibold text-white pt-2">1. Information We Collect</h4>
+        <p>When you purchase a product through Stripe, we receive your email address, name, and billing details necessary to fulfill your digital delivery. We do not store your full credit card number; all payments are processed securely by Stripe.</p>
+        <h4 class="font-semibold text-white pt-2">2. How We Use Your Information</h4>
+        <p>Your information is used solely to deliver your purchased prompt bundles, provide customer support via support@usformkit.com, and comply with legal obligations.</p>
+        <h4 class="font-semibold text-white pt-2">3. Cookies & Tracking</h4>
+        <p>We may use basic analytics and conversion pixels (such as Meta Pixel) to measure ad performance and improve our user experience.</p>
+        <h4 class="font-semibold text-white pt-2">4. Contact Us</h4>
+        <p>If you have any questions regarding this Privacy Policy, contact us at: <a href="mailto:support@usformkit.com" class="text-emerald-400 underline">support@usformkit.com</a></p>
+      </div>
+    </template>
+
+    <!-- TERMS OF SERVICE -->
+    <template x-if="modal === 'terms'">
+      <div class="space-y-4 text-sm">
+        <h3 class="text-xl font-bold text-white">Terms of Service</h3>
+        <p class="text-xs text-zinc-500">Last updated: November 14, 2026</p>
+        <p>By purchasing from PromptKit, you agree to the following terms and conditions.</p>
+        <h4 class="font-semibold text-white pt-2">1. Digital Products & License</h4>
+        <p>PromptKit sells digital AI prompt templates. Upon successful payment of $7, you are granted a non-exclusive, non-transferable license to use the prompts for personal and commercial projects.</p>
+        <h4 class="font-semibold text-white pt-2">2. Payments & Pricing</h4>
+        <p>All purchases are one-time payments processed securely via Stripe. Prices are listed in USD and are non-recurring.</p>
+        <h4 class="font-semibold text-white pt-2">3. Disclaimer</h4>
+        <p>Our prompts are designed to assist with copywriting and content generation. Results may vary based on your niche, platform algorithms, and edits. We do not guarantee specific financial results or sales figures.</p>
+        <h4 class="font-semibold text-white pt-2">4. Support</h4>
+        <p>For any assistance or download issues, reach out to <a href="mailto:support@usformkit.com" class="text-emerald-400 underline">support@usformkit.com</a>.</p>
+      </div>
+    </template>
+
+    <!-- REFUND POLICY -->
+    <template x-if="modal === 'refund'">
+      <div class="space-y-4 text-sm">
+        <h3 class="text-xl font-bold text-white">Refund & Cancellation Policy</h3>
+        <p class="text-xs text-zinc-500">Last updated: November 14, 2026</p>
+        <p>Because PromptKit offers instantly accessible digital goods (AI prompt bundles delivered immediately upon purchase), **all sales are final** and non-refundable.</p>
+        <h4 class="font-semibold text-white pt-2">Exceptions</h4>
+        <p>If you experience technical issues accessing your files or received a duplicate charge due to a system error, please contact us within 48 hours at <a href="mailto:support@usformkit.com" class="text-emerald-400 underline">support@usformkit.com</a> and we will promptly resolve the issue.</p>
+      </div>
+    </template>
+  </div>
+</div>
+
+<footer class="border-t border-white/10 px-5 py-10">
+  <div class="mx-auto flex max-w-6xl flex-col gap-4 text-sm text-zinc-500 sm:flex-row sm:items-center sm:justify-between">
+    <p>© <span id="yr">2026</span> PromptKit. All rights reserved.</p>
+    <nav class="flex gap-6" aria-label="Footer">
+      <button type="button" @click="modal = 'privacy'" class="hover:text-white transition">Privacy Policy</button>
+      <button type="button" @click="modal = 'terms'" class="hover:text-white transition">Terms of Service</button>
+      <button type="button" @click="modal = 'refund'" class="hover:text-white transition">Refund Policy</button>
+      <a href="mailto:support@usformkit.com" class="hover:text-white transition">Support</a>
+    </nav>
+  </div>
+  <p class="mx-auto mt-6 max-w-6xl text-xs leading-relaxed text-zinc-600">PromptKit sells digital prompt templates for use with third-party AI tools. Results vary and are not guaranteed. PromptKit is not affiliated with OpenAI, Anthropic, Google, Meta, TikTok, or Shopify.</p>
+</footer>
+
+<script>
+window.PK = {
+  bundles: [
+    {
+      id: 'ecommerce', tab: 'E-Commerce', name: 'The E-Commerce Scale Bundle', short: 'E-Commerce', popular: true, badge: 'Most popular',
+      icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h13l-1.5 8.5a2 2 0 01-2 1.5H9.2a2 2 0 01-2-1.6L5.5 4H3"/><circle cx="9.5" cy="20.5" r="1"/><circle cx="16.5" cy="20.5" r="1"/></svg>',
+      blurb: 'Ads that stop the scroll, product pages that convert, and cart emails that bring buyers back.',
+      stripe: 'https://buy.stripe.com/3cI8wP4xP7OX14m4Gq3AY03',
+      items: [
+        '25 Facebook and Instagram ad prompts: hooks, angles, retargeting',
+        '20 TikTok ad script and UGC brief prompts',
+        '15 Shopify product description prompts',
+        '10 abandoned cart email and SMS sequence prompts',
+        'Fill-in-the-brackets format for ChatGPT, Claude, and Gemini'
+      ],
+      file: 'facebook-ad-copy.prompt', sampleTitle: 'Facebook ad copy: problem, proof, offer',
+      sampleHint: 'Five ad variations, each with a different emotional angle.',
+      example: { product: 'Posture-support seat cushion for desk chairs', customer: 'Remote workers aged 28 to 45 with lower-back pain', proof: '4.8 stars from 2,100 verified reviews', offer: '20% off plus free US shipping' },
+      fields: [
+        { k: 'product', label: 'Product', ph: 'e.g., Posture-support seat cushion' },
+        { k: 'customer', label: 'Target customer', ph: 'e.g., Remote workers with back pain' },
+        { k: 'proof', label: 'Proof', ph: 'e.g., 4.8 stars from 2,100 reviews' },
+        { k: 'offer', label: 'Offer', ph: 'e.g., 20% off plus free shipping' }
+      ],
+      template:
+`ROLE: You are a senior direct-response copywriter who has written ads for DTC brands spending $50k+ a month on Meta.
+
+TASK: Write 5 Facebook ad variations for my product.
+
+PRODUCT: {{product}}
+TARGET CUSTOMER: {{customer}}
+PROOF: {{proof}}
+OFFER: {{offer}}
+
+FOR EACH VARIATION, DELIVER:
+1. Hook: first line, under 12 words, stops the scroll
+2. Primary text: 60 to 90 words, problem then proof then offer
+3. Headline: under 8 words
+4. Call to action: one line
+
+RULES:
+- Use a different emotional angle in each variation: fear of missing out, social proof, curiosity, simplicity, savings.
+- Plain, specific language. No clichés like "game-changer" or "revolutionary".
+- Make no medical or income claims.
+- End with one line on which variation to test first, and why.`
+    },
+    {
+      id: 'realestate', tab: 'Real Estate', name: 'The Real Estate Lead Gen Bundle', short: 'Real Estate', popular: false, badge: 'Instant access',
+      icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>',
+      blurb: 'Listing copy, outreach, and local video scripts that win listings and fill your calendar.',
+      stripe: 'https://buy.stripe.com/7sYdR97K13yHaEW5Ku3AY04',
+      items: [
+        '20 listing description prompts: luxury, starter, investor, condo',
+        '15 cold outreach prompts for buyers and sellers (email, text, DM)',
+        '15 localized social scripts for Reels, TikTok, and neighborhood tours',
+        'Expired listing, FSBO, and open house follow-up prompts',
+        'Fair Housing-aware phrasing guidance built in'
+      ],
+      file: 'mls-listing-description.prompt', sampleTitle: 'MLS listing description in three lengths',
+      sampleHint: 'One property in, three ready-to-post descriptions out.',
+      example: { location: 'Zilker, Austin, TX', details: '3 bed, 2 bath, 1,850 sq ft, renovated kitchen, fenced backyard, 2-car garage', perks: 'Barton Springs 8 minutes away, 12-minute drive downtown', buyer: 'First-time buyers who work downtown' },
+      fields: [
+        { k: 'location', label: 'Neighborhood, city, state', ph: 'e.g., Zilker, Austin, TX' },
+        { k: 'details', label: 'Beds, baths, sq ft, standout features', ph: 'e.g., 3 bed, 2 bath, renovated kitchen' },
+        { k: 'perks', label: 'Nearby perks', ph: 'e.g., Parks, restaurants, commute' },
+        { k: 'buyer', label: 'Likely buyer', ph: 'e.g., First-time buyers who work downtown' }
+      ],
+      template:
+`ROLE: You are an award-winning real estate copywriter who writes vivid, accurate, Fair Housing-compliant listing descriptions.
+
+TASK: Write a listing description in 3 lengths: MLS short (400 characters), standard (150 words), and social caption (60 words).
+
+LOCATION: {{location}}
+PROPERTY DETAILS: {{details}}
+NEARBY PERKS: {{perks}}
+LIKELY BUYER: {{buyer}}
+
+STRUCTURE:
+1. Opening line that sells a lifestyle, not a floor plan
+2. The three most valuable features, ordered by buyer impact
+3. The neighborhood and location advantage
+4. A soft call to action to book a showing
+
+RULES:
+- Be specific and factual. Never invent features.
+- Avoid language that references race, religion, family status, or other protected classes.
+- No ALL CAPS and no more than one exclamation point.
+- Finish with 5 relevant hashtags for the social caption.`
+    },
+    {
+      id: 'ugc', tab: 'UGC Creator', name: 'The UGC Creator & Brand Pitch Bundle', short: 'UGC Creator', popular: false, badge: 'Instant access',
+      icon: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10.5l5-3v9l-5-3"/></svg>',
+      blurb: 'DMs, pitch emails, and rate replies that sound professional and get paid brand deals.',
+      stripe: 'https://buy.stripe.com/fZu3cv7K13yH5kC3Cm3AY05',
+      items: [
+        '20 DM scripts for brands and founders',
+        '15 cold pitch email prompts for brand managers and agencies',
+        'Rate-card replies: negotiate up, handle "budget is tight," usage rights',
+        'Follow-up sequences that get replies without nagging',
+        'Portfolio bio and pitch deck outline prompts'
+      ],
+      file: 'brand-pitch-email.prompt', sampleTitle: 'Cold pitch email plus two follow-ups',
+      sampleHint: 'Pitch a brand manager with a specific content idea.',
+      example: { creator: 'Maya, skincare UGC creator with 80k TikTok followers; my last routine video hit 120k views', brand: 'Glow Theory, a vitamin C serum brand', idea: 'three get-ready-with-me videos featuring your serum, with raw footage and hooks', goal: 'a paid UGC package' },
+      fields: [
+        { k: 'creator', label: 'About you', ph: 'e.g., Maya, skincare creator, 80k followers' },
+        { k: 'brand', label: 'Brand and what they sell', ph: 'e.g., Glow Theory, vitamin C serum' },
+        { k: 'idea', label: 'Content you would create', ph: 'e.g., 3 get-ready-with-me videos' },
+        { k: 'goal', label: 'Your goal', ph: 'e.g., A paid UGC package' }
+      ],
+      template:
+`ROLE: You are a top-earning UGC creator coach who has helped creators book paid brand deals.
+
+TASK: Write a cold pitch email from me to a brand manager, plus two follow-ups.
+
+ABOUT ME: {{creator}}
+BRAND: {{brand}}
+CONTENT I CAN DELIVER: {{idea}}
+MY GOAL: {{goal}}
+
+EMAIL 1 (under 120 words):
+- Subject line: 3 options, under 7 words each, no clickbait
+- Open with one genuine, specific observation about the brand
+- One line of credibility and one line on the content idea
+- A low-friction ask: a quick reply, not a call
+
+FOLLOW-UP 1 (day 3) and FOLLOW-UP 2 (day 7): each under 60 words, each adding a new point of value. Never write "just checking in."
+
+RULES:
+- Warm, confident, professional. No groveling.
+- Use only the facts I provided. Do not invent metrics.
+- Add a P.S. that mentions a specific product.`
+    }
+  ],
+  faqs: [
+    { q: 'What do I get after I pay?', a: 'You get instant access to your prompt bundle through Stripe checkout. Every prompt is organized by use case and written with fill-in-the-brackets fields, so you copy it, add your details, and paste it into your AI tool.' },
+    { q: 'Which AI tools do these prompts work with?', a: 'ChatGPT, Claude, Gemini, and most other large language models. The free versions of these tools are enough, so you do not need a paid AI subscription.' },
+    { q: 'Are these ChatGPT prompts good for Shopify and Facebook ads?', a: 'Yes. The E-Commerce Scale Bundle covers Facebook and Instagram ad copy, TikTok ad scripts, Shopify product descriptions, and abandoned cart email sequences.' },
+    { q: 'Can I use AI prompts to write real estate listing descriptions?', a: 'Yes. The Real Estate Lead Gen Bundle includes prompts for MLS descriptions, buyer and seller outreach, and social media scripts, with guidance to keep your wording Fair Housing-aware. Always check AI output for accuracy before you publish it.' },
+    { q: 'How do UGC creators pitch brands and set rates?', a: 'The UGC Creator & Brand Pitch Bundle gives you DM scripts, cold email prompts for brand managers, and reply templates for rate negotiation and usage rights.' },
+    { q: 'Is this a subscription?', a: 'No. Each bundle is a one-time $7 payment. There are no recurring charges.' },
+    { q: 'Can I get a refund?', a: 'Because these are instantly delivered digital products, purchases are generally final. If your download has a problem, email support and we will fix it.' },
+    { q: 'Do the prompts guarantee results?', a: 'No. Prompts speed up your writing, but results depend on your product, offer, market, and how you edit the output. We do not promise specific sales or income.' }
+  ]
+};
+
+function playground(){
+  const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  const vals = {};
+  PK.bundles.forEach(b => { vals[b.id] = {}; b.fields.forEach(f => vals[b.id][f.k] = ''); });
+  return {
+    bundles: PK.bundles, active: PK.bundles[0].id, copied: null, vals,
+    html(b){
+      const v = this.vals[b.id];
+      return esc(b.template)
+        .replace(/^([A-Z][A-Z0-9 ()&\/-]{1,36}):/gm, '<span class="key">$1:</span>')
+        .replace(/\{\{(\w+)\}\}/g, (m,k) => {
+          const f = b.fields.find(x => x.k === k), val = (v[k]||'').trim();
+          return val ? '<span class="tok on">'+esc(val)+'</span>' : '<span class="tok">['+esc(f.label)+']</span>';
+        });
+    },
+    plain(b){
+      const v = this.vals[b.id];
+      return b.template.replace(/\{\{(\w+)\}\}/g, (m,k) => {
+        const f = b.fields.find(x => x.k === k), val = (v[k]||'').trim();
+        return val || '['+f.label+']';
+      });
+    },
+    fillExample(b){ b.fields.forEach(f => this.vals[b.id][f.k] = b.example[f.k] || ''); },
+    clearAll(b){ b.fields.forEach(f => this.vals[b.id][f.k] = ''); },
+    async copy(b){
+      const text = this.plain(b);
+      try { await navigator.clipboard.writeText(text); }
+      catch(e){
+        const ta = document.createElement('textarea'); ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+        document.body.appendChild(ta); ta.select(); try{ document.execCommand('copy'); }catch(_){} ta.remove();
+      }
+      this.copied = b.id; clearTimeout(this._t);
+      this._t = setTimeout(() => { if(this.copied === b.id) this.copied = null; }, 1800);
+    }
+  };
+}
+
+document.addEventListener('pointermove', e => {
+  const el = e.target.closest && e.target.closest('.spot');
+  if(!el) return;
+  const r = el.getBoundingClientRect();
+  el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+  el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+}, { passive: true });
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
