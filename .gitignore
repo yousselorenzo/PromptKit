@@ -1,2 +1,5 @@
 explainer/out/
 node_modules/
+products/
+tools/lib_*.py
+tools/__pycache__/
