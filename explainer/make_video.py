@@ -12,7 +12,7 @@ open("voice.json", "w").write(vo)
 os.makedirs("out", exist_ok=True)
 for cmd in (["node", "song.js"], ["node", "engine/render.js", "video"], ["node", "engine/render.js", "mux"]):
     subprocess.run(cmd, check=True)
-base, out = "out/pk-ecom-explainer.mp4", f"out/{eid}.mp4"
+base, out = "out/explainer.mp4", f"out/{eid}.mp4"
 if "--no-voice" not in sys.argv and (os.getenv("OPENAI_API_KEY") or os.getenv("ELEVEN_API_KEY")):
     subprocess.run([sys.executable, "voice_mix.py", base, "voice.json", out], check=True)
     voiced = True
