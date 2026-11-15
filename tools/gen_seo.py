@@ -94,5 +94,5 @@ for p in PAGES:
     open(os.path.join(d, "index.html"), "w").write(page(p))
 urls = [SITE + "/"] + [f"{SITE}/prompts/{p['slug']}/" for p in PAGES]
 open("sitemap.xml","w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "".join(f"<url><loc>{u}</loc><lastmod>{TODAY}</lastmod></url>\n" for u in urls) + "</urlset>\n")
-open("robots.txt","w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
+open("robots.txt","w").write(f"User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: {SITE}/sitemap.xml\n")
 print(len(PAGES), "pages")
