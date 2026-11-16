@@ -1,0 +1,63 @@
+{
+ "date": "2026-11-16",
+ "tag": "videos-2026-11-16-4",
+ "items": [
+  {
+   "id": "ecom-01",
+   "bundle": "E-Commerce",
+   "caption": "Your AI ads sound generic because the prompt is generic. PromptKit gives you ready-made prompts for ads, product pages and cart emails. $7, one-time. Link in bio. Illustration. Results vary.",
+   "tags": [
+    "ecommerce",
+    "shopify",
+    "aiprompts",
+    "smallbusiness"
+   ],
+   "voiced": false,
+   "video_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ecom-01.mp4",
+   "poster_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ecom-01.jpg",
+   "pin_urls": [
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ecom-01.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ecom-01-p2.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ecom-01-p3.jpg"
+   ]
+  },
+  {
+   "id": "re-01",
+   "bundle": "Real Estate",
+   "caption": "Generic listings get skipped. A structured prompt writes listings buyers remember. PromptKit Real Estate bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+   "tags": [
+    "realestate",
+    "realtor",
+    "listing",
+    "aiprompts"
+   ],
+   "voiced": false,
+   "video_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/re-01.mp4",
+   "poster_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/re-01.jpg",
+   "pin_urls": [
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/re-01.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/re-01-p2.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/re-01-p3.jpg"
+   ]
+  },
+  {
+   "id": "ugc-01",
+   "bundle": "UGC",
+   "caption": "Generic brand pitches get ignored. A structured prompt writes pitches that get replies. PromptKit UGC bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+   "tags": [
+    "ugccreator",
+    "ugc",
+    "brandpitch",
+    "aiprompts"
+   ],
+   "voiced": false,
+   "video_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ugc-01.mp4",
+   "poster_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ugc-01.jpg",
+   "pin_urls": [
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ugc-01.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ugc-01-p2.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-16-4/ugc-01-p3.jpg"
+   ]
+  }
+ ]
+}
