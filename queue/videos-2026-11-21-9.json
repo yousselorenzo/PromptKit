@@ -1,0 +1,63 @@
+{
+ "date": "2026-11-21",
+ "tag": "videos-2026-11-21-9",
+ "items": [
+  {
+   "id": "ecom-02",
+   "bundle": "E-Commerce",
+   "caption": "Generic product descriptions lose sales. A better prompt writes copy that sells the benefit. PromptKit E-Commerce bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+   "tags": [
+    "ecommerce",
+    "productdescription",
+    "aiprompts",
+    "shopify"
+   ],
+   "voiced": false,
+   "video_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ecom-02.mp4",
+   "poster_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ecom-02.jpg",
+   "pin_urls": [
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ecom-02.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ecom-02-p2.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ecom-02-p3.jpg"
+   ]
+  },
+  {
+   "id": "re-02",
+   "bundle": "Real Estate",
+   "caption": "Boring open house posts get scrolled past. A structured prompt writes posts people show up for. PromptKit Real Estate bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+   "tags": [
+    "realestate",
+    "openhouse",
+    "realtor",
+    "aiprompts"
+   ],
+   "voiced": false,
+   "video_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/re-02.mp4",
+   "poster_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/re-02.jpg",
+   "pin_urls": [
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/re-02.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/re-02-p2.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/re-02-p3.jpg"
+   ]
+  },
+  {
+   "id": "ugc-02",
+   "bundle": "UGC",
+   "caption": "Weak hooks lose viewers in 3 seconds. A structured prompt writes hooks that hold attention. PromptKit UGC bundle: $7, one-time. Link in bio. Illustration. Results vary.",
+   "tags": [
+    "ugccreator",
+    "videoscript",
+    "hooks",
+    "aiprompts"
+   ],
+   "voiced": false,
+   "video_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ugc-02.mp4",
+   "poster_url": "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ugc-02.jpg",
+   "pin_urls": [
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ugc-02.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ugc-02-p2.jpg",
+    "https://github.com/yousselorenzo/PromptKit/releases/download/videos-2026-11-21-9/ugc-02-p3.jpg"
+   ]
+  }
+ ]
+}
